@@ -13,17 +13,17 @@ print(Fore.GREEN + '''
                        ''')
 
 site = input(Fore.GREEN + '[!] Cole a URL do Site: ')
-pass_list = input(Fore.GREEN + '[!] Cole o diretório da usa Wordlist: ')
+wdl_directory = input(Fore.GREEN + '[!] Cole o diretório da usa Wordlist: ')
 
 print(Fore.GREEN + '')
 print('=================================================')
 print('[+] URL:', site)
-print('[+] Wordlist:', pass_list)
+print('[+] Wordlist:', wdl_directory)
 print('[+] Status: 200, 301, 302, 307, 403')
 print('=================================================')
 print('')
 
-wrd_lst=open(pass_list, "r")
+wrd_lst=open(wdl_directory, "r")
 read_lines=wrd_lst.readlines()
 for line in read_lines:
     lst=line.strip('\r\n')
